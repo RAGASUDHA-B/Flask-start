@@ -4,7 +4,10 @@
         <title>BLOG</title>
     </head>
     <body>
-        <h1>Home page</h1>
-        <p>hi i am ragasudha and pursuing be degree at thiagarajar college of engineering</p>
+        {% for i in post %}
+            <h1>{{ i.title }}</h1>
+            <p>By {{ i.author }} on {{ i.date_posted }}</p>
+            <p>{{ i.content }}</p>
+        {% endfor %}
     </body>
 </html>
