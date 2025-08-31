@@ -15,7 +15,7 @@ def add():
         tasks.append(task)
     return redirect(url_for('index'))
 
-@app.route('/❌/<int:index>')
+@app.route('/delete/<int:index>')
 def delete(index):
     if 0 <= index < len(tasks):
         tasks.pop(index)

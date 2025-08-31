@@ -1,10 +1,15 @@
 from flask import Flask,render_template
+from flask_scss import Scss
+from flask_sqlalchemy import SQLAlchemy
+
+#my app
 app=Flask(__name__)
 
-@app.route('/')
-@app.route('/result')
-def result():
-    dict={'phy':50,'che':60,'maths':70}
-    return render_template('home.html',result=dict)
-if __name__=='__main__':
-    app.run(debug = True)
+#our main page
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+
+if __name__=="__main__":
+    app.run(debug=True)
