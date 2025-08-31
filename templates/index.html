@@ -1,10 +1,19 @@
-<h1>To-Do List</h1>
-<form action="/add" method="post">
-    <input type="text" name="task" placeholder="Enter a task" required>
-    <button type="submit">Add</button>
-</form>
-<ul>
-    {% for task in tasks %}
-        <li>{{ task }} <a href="{{ url_for('delete', index=loop.index0) }}">Delete</a></li>
-    {% endfor %}
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <link rel="stylesheet" href="{{url_for("static" , filename="style.css")}}" />  
+        <title>MY APP</title>
+
+    </head>
+    <body>
+        <h1>welcome to my app</h1>
+        <p>
+            "I’m a Computer Science and Engineering student with a strong interest in software development. Currently building my skills in web development (HTML, CSS, JavaScript) and Data Structures & Algorithm.
+        </p>
+
+    </body>
+
+</html>
