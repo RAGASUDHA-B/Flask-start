@@ -1,19 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-        <link rel="stylesheet" href="{{url_for("static" , filename="style.css")}}" />  
-        <title>MY APP</title>
-
+        <title>WELCOME</title>
     </head>
     <body>
-        <h1>welcome to my app</h1>
-        <p>
-            "I’m a Computer Science and Engineering student with a strong interest in software development. Currently building my skills in web development (HTML, CSS, JavaScript) and Data Structures & Algorithm.
-        </p>
-
+        <h2>welcome,{{username}}!</h2>
+        <p>you are logged in.</p>
+        <a href="{{url_for('logout')}}">Logout</a>
     </body>
-
 </html>
