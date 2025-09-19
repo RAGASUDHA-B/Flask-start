@@ -10,7 +10,7 @@ app.secret_key = 'flaskuser'
 # MySQL configuration
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'MySQL@2409#'  # ✅ Your MySQL password
+app.config['MYSQL_PASSWORD'] = 'MySQL@2409#'  #Your MySQL password
 app.config['MYSQL_DB'] = 'geeklogin'
 
 mysql = MySQL(app)
